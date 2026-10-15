@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Isometra&family=Nosifer&display=swap');
+
+
+
+
+body{
+    background-color: #000000;
+    color: #ff0000;
+    font-family: "Isometra", serif;
+    font-size: 20px;
+}
+h1{
+    color: #ff0000;
+    font-size: 80px;
+    text-align: center;
+    font-family: "Nosifer", sans-serif;
+    text-shadow: 5px 5px 2px #740101;
+}
+li{
+    color: #ff4545bb;
+    font-family: "Isometra", serif;
+}
+h5{
+    font-family: "Nosifer", sans-serif;
+    color: #ff0000;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 3px 3px 5px #CC5555BB;
+}
+img{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    margin: 120px auto;
+}
+li::marker{
+    color: #fd8700fd;
+}
+
+
