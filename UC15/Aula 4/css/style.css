@@ -1,0 +1,22 @@
+body{
+    background-color:red;
+}
+
+
+#imagens{
+    display:grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    justify-content:center;
+}
+.f1{
+
+    background-color:black;
+}
+.f2{
+    background-color:black ;
+}
+.f3{
+    background-color:black ;
+}

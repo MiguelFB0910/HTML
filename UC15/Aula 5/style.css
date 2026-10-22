@@ -1,0 +1,81 @@
+
+body {
+    margin: 0;
+    font-family: "Anton", sans-serif;
+    background-color: rgb(130, 235, 200);
+    color: rgb(43, 43, 122);
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 3px rgb(43, 43, 122);
+
+}
+
+#imagens {
+    display: flex;
+    justify-content: center;
+    column-gap:150px
+}
+
+#imagens img {
+    width: 400px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 30px;
+}
+
+.sb1 {
+    font-family: "Archivo", sans-serif;
+    font-size: 40px;
+}
+
+.cabeca {
+    font-family: "Anton", sans-serif;
+    font-size: 25px;
+}
+
+.img4 img {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+hr {
+    border: 2px solid black;
+    margin: 30px;
+}
+
+.sb2 {
+    font-family: "Archivo", sans-serif;
+    font-size: 25px;
+    margin: 30px;
+}
+
+li{
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+@media (max-width: 1000px){
+
+.introducao {
+    grid-template-columns: 1fr;
+    margin: 30px 10px;
+}
+
+.img4 img {
+    max-width: 100%;
+    }
+}
