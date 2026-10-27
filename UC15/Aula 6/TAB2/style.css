@@ -1,0 +1,37 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    
+}
+table{
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    font-size: 15px;
+    border: 3px solid;
+    border-color: darkblue;
+    
+}
+th,td{
+    padding: 12px 15px;
+    text-align: left;
+   
+    color: darkblue;
+    border: 3px solid;
+    border-color: darkblue;
+
+}
+thead th{
+background-color: darkblue;
+color: white; 
+border: 3px solid;
+border-color: darkblue;
+}
+/* Efeito zebra: cores alternadas nas linhas pares*/
+/* se colocar uma cor de fundo na tabela no td/th,o estilo zebra nao funciona*/
+
+
+tbody tr:nth-child(even){
+    background-color: aliceblue;
+}
+
