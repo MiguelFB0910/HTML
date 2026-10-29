@@ -1,0 +1,23 @@
+table{
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+b{
+    font-size: 25px;
+    color:royalblue;
+}
+.pro{
+    background-color: royalblue;
+    color:white;
+}
+th,td{
+    border: 1px solid rgb(233, 233, 233); 
+}
+thead{
+    background-color: rgba(211, 211, 211, 0.288);
+}

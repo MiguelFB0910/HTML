@@ -1,0 +1,26 @@
+table{
+    font-family: monospace ;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+tr{
+    font-size: 15px;
+}
+th, td {
+    border: 1px solid lightgray; 
+    padding: 10px;
+}
+.p{
+    color:green;
+}
+.n{
+    color:red
+}
+thead{
+    background-color: rgba(165, 195, 200, 0.230);
+}
+th{
+    color:rgb(75, 86, 97)
+}

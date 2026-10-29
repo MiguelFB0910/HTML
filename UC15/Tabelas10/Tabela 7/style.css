@@ -1,0 +1,43 @@
+table{
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+tr{
+    height: 40px;
+    
+}
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.badge.urgente {
+    background-color: #f5c6c6; 
+    color: #991b1b;           
+}
+.badge.media {
+    background-color: rgb(253, 253, 192); 
+    color: #92400e;           
+}
+
+
+.badge.concluido {
+    background-color: rgba(144, 238, 144, 0.548); 
+    color: #065f46;           
+}
+thead{
+    color:rgb(100, 125, 145)
+}
+tbody tr {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgba(128, 128, 128, 0.219);
+}
