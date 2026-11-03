@@ -22,7 +22,7 @@ thead {
 .status {
     display: inline-block;
     padding: 4px 12px;
-    border-radius: 50px; 
+    border-radius: 50px;
     font-size: 13px;
     font-weight: 600;
     text-align: center;
@@ -33,6 +33,7 @@ thead {
 .atingida {
     background-color: #E2F7E2;
     color: #1E824C;
+    
     
 }
 
@@ -60,7 +61,7 @@ td {
     padding: 14px 20px;
     font-size: 14px;
     color: #334155;
-    border-bottom: 1px solid #aeb1b44f;
+
 }
 .por{
     color:rgb(45, 180, 45);
@@ -70,4 +71,8 @@ td {
 }
 .suave{
     background-color: #f4f6f9;
+    border: 1px solid #aeb1b44f;
+}
+td:has(.status) {
+    text-align: center;
 }
