@@ -3,13 +3,13 @@ body {
     margin: 20px;
 }
 table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 30px;
     overflow: hidden;
     
 }
@@ -19,9 +19,6 @@ thead {
     border-radius: 10px;
     
 }
-.head{
-    border-radius: 10px;
-}
 .status {
     display: inline-block;
     padding: 4px 12px;
@@ -29,12 +26,14 @@ thead {
     font-size: 13px;
     font-weight: 600;
     text-align: center;
+    
 }
 
 
 .atingida {
     background-color: #E2F7E2;
     color: #1E824C;
+    
 }
 
 
@@ -55,17 +54,20 @@ th {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-align: left;
-    border-bottom: 2px solid #1e293b3b;
+    border-bottom: 1px solid #aeb1b44f;
 }
 td {
     padding: 14px 20px;
     font-size: 14px;
     color: #334155;
-    border-bottom: 1px solid #f1f5f9;
+    border-bottom: 1px solid #aeb1b44f;
 }
 .por{
     color:rgb(45, 180, 45);
 }
 .porc{
     color:rgba(255, 0, 0, 0.690);
+}
+.suave{
+    background-color: #f4f6f9;
 }
