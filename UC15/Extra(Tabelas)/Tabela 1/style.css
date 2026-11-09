@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px #0000003d;
+}
+tr{
+    border-bottom: 1px solid #0000003d;
+}
+thead{
+    background-color: #252842fd;
+}
+th, td{
+    padding: 12px;
+}
+th{
+    color:white;
+}
+tbody td:hover {
+    color: #fc0000; 
+    transition: color 0.5s ease; 
+}
+tbody tr:hover {
+    background-color: #ff70702d; 
+    transition: background-color 0.5s ease, color 0.5s ease;
+}

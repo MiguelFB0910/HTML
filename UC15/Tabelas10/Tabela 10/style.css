@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+table {
+    width: auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 30px;
+    overflow: hidden;
+    
+}
+thead {
+    background-color: #0f172a;
+    color: #ffffff;
+    border-radius: 10px;
+    
+}
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+
+.atingida {
+    background-color: #E2F7E2;
+    color: #1E824C;
+    
+    
+}
+
+
+.nao-atingida {
+    background-color: #FDE8E8;
+    color: #C0392B;
+}
+
+
+.geral {
+    background-color: #E2F7E2;
+    color: #1E824C;
+}
+th {
+    padding: 16px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: left;
+    border-bottom: 1px solid #aeb1b44f;
+}
+td {
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #334155;
+
+}
+.por{
+    color:rgb(45, 180, 45);
+}
+.porc{
+    color:rgba(255, 0, 0, 0.690);
+}
+.suave{
+    background-color: #f4f6f9;
+    border: 1px solid #aeb1b44f;
+}
+td:has(.status) {
+    text-align: center;
+}
