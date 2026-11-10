@@ -27,8 +27,8 @@
 
 .menu-principal ul li a {
     font-family: 'Changa One';
-    background-color: rgb(245, 245, 245);
-    color: rgb(248, 136, 214);
+    background-color: rgb(52, 168, 235);
+    color: rgb(247, 174, 64);
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px 20px;
@@ -40,21 +40,21 @@
 .menu-principal ul li a:hover {
     background-color: rgb(133, 171, 211);
     color: rgb(5, 5, 5);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 #pagina-home {
     height: 600px;
-    background: linear-gradient(rgba(169, 202, 240, 0.39), rgba(99, 176, 238, 0.185)), url(../img/banner.jpg);
+    background: linear-gradient(rgba(52, 168, 235, 0.39), rgba(247, 174, 64, 0.616)), url(../img/ynbanner.png);
     background-size: cover;
     background-position: center;
 }
 
 .filmes-container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: left; 
     align-items: flex-start;
-    gap: 20px; 
+    gap: 10px; 
     flex-wrap: wrap; 
     padding: 0 40px; 
 }
@@ -86,8 +86,8 @@
 .Livre {
     font-family: 'Changa One';
     background-color: #008837; 
-    font-size: 11px !important; 
-    width: auto !important;
+    font-size: 15px !important; 
+    width: 20px !important;
     height: auto !important;
     padding: 0 6px;
 }
@@ -121,35 +121,98 @@
     text-align: center;
     margin: 30px;
     text-transform: uppercase;
-    color: rgb(252, 161, 225);
+    color:  rgb(247, 174, 64);
     background-color: rgb(67, 151, 224);
-    border-radius: 30px;
+    border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
-    
-}
-.destaques {
-    font-family: 'Changa One';
-    text-align: left;
-    margin: 20px;
-    text-transform: uppercase;
-    color: rgb(131, 193, 230);
-}
-.filme-card img {
-    width: 300px;          
-    height: 450px;       
-    object-fit: cover;  
-    border-radius: 15px;
-    transition: transform 0.5s ease; 
-    /* Faz o zoom ser suave e não seco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-/* Efeito quando passa o mouse */
-.filme-card img:hover {
-    transform: scale(1.02); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 50px;
 }
 #corpo{
-
-    background: linear-gradient(rgb(50, 136, 235), rgba(241, 150, 241, 0.747));
+    background: linear-gradient(rgb(50, 136, 235), rgba(247, 174, 64, 0.849));
+}
+.espaco{
+    background-color: rgb(247, 174, 64);
+    display: block;
+}
+/* Faz a imagem e o texto ficarem lado a lado */
+.card-interno {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+.info-lateral {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+}
+.filme-tituloyn {
+    font-family: 'Changa One';
+    font-size: 65px;
+    margin-top: 10px;
+    color:  rgb(247, 174, 64);
+}
+.video-bloqueado-container {
+    position: relative;
+    width: 560px; 
+    height: 315px; 
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.camada-bloqueio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: transparent;
+}
+.video-bloqueado-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+.filme-sinopseyn {
+    font-family: 'Changa One';
+    font-size: 20px;
+    color: rgb(250, 195, 105);
+    margin-top: 10px;
+}
+.sinopse{
+    font-family: 'Changa One';
+    font-size: 18px;
+    color: rgb(255, 222, 125);
+    margin-top: 10px;
+}
+.duracao, .ano {
+    font-family: 'Changa One';
+    font-size: 18px;
+    color: rgb(250, 195, 105);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.lista-categoriasyn {
+    font-family: 'Changa One';
+    text-align: left;
+    margin: 10px;
+    text-transform: uppercase;
+    color: rgb(131, 193, 230);
+    word-spacing: 20px;
+}
+.personagens{
+    font-family: 'Changa One';
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color: rgb(247, 174, 64);
+    background-color: rgb(67, 151, 224);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+    width: 100%;
 }

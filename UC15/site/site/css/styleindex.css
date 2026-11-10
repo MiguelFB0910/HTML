@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 200px;
+    height: 180px;
+}
+
+.categoria {
+    
+    padding-top: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal ul li {
+    font-family: 'Changa One';
+    display: inline-block;
+}
+
+.menu-principal ul li a {
+    font-family: 'Changa One';
+    background-color: rgb(133, 171, 211);
+    color: rgb(248, 136, 214);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.menu-principal ul li a:hover {
+    background-color: rgb(248, 136, 214);
+    color: rgb(133, 171, 211);
+    transition: transform 0.3s ease;
+}
+
+#pagina-home {
+    height: 600px;
+    background: linear-gradient(rgba(169, 202, 240, 0.39), rgba(99, 176, 238, 0.185)), url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.filmes-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 0 40px; 
+}
+
+.filme-card {
+    text-align: center;
+}
+
+.filme-card img {
+    width: 300px;          
+    height: 450px;       
+    object-fit: cover;  
+    border-radius: 15px;
+}
+/* estilo base para todas as classificações indicativas */
+.filme-info span[class^="Livre"],
+.filme-info span[class^="idade-"] {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.Livre {
+    font-family: 'Changa One';
+    background-color: #008837; 
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+}
+
+.idade-10 {
+    font-family: 'Changa One';
+    background-color: #0056b3; 
+}
+.idade-12 {
+    font-family: 'Changa One';
+    background-color: #ffcc00; 
+    color: #000000 !important;
+}
+
+.idade-14 {
+    font-family: 'Changa One';
+    background-color: #ee7d00; 
+}
+
+.idade-16 {
+    font-family: 'Changa One';
+    background-color: #d60000; 
+}
+
+.idade-18 {
+    font-family: 'Changa One';
+    background-color: #1a1a1a; 
+}
+.filmes-all {
+    font-family: 'Changa One' ;
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color: rgb(252, 161, 225);
+    background-color: rgb(67, 151, 224);
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.destaques {
+    font-family: 'Changa One';
+    text-align: left;
+    margin: 20px;
+    text-transform: uppercase;
+    color: rgb(131, 193, 230);
+}
+.filme-card img {
+    width: 300px;          
+    height: 450px;       
+    object-fit: cover;  
+    border-radius: 15px;
+    transition: transform 0.5s ease; 
+    /* Faz o zoom ser suave e não seco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Efeito quando passa o mouse */
+.filme-card img:hover {
+    transform: scale(1.02); 
+}
+#corpo{
+    background: linear-gradient(rgb(50, 136, 235), rgba(241, 150, 241, 0.747));
+}
+.espaco{
+    background-color:rgb(252, 161, 225);
+    display: block;
+}
+.novidades{
+    font-family: 'Changa One';
+    text-align: left;
+    margin: 20px;
+    text-transform: uppercase;
+    color: rgb(131, 193, 230);
+}
+.filme-titulo {
+    font-family: 'Changa One';
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgb(232, 187, 250);
+}
+.lista-categorias {
+    font-family: 'Changa One';
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    color: rgb(131, 193, 230);
+}
