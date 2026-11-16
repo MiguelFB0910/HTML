@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Aula - 13</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Formulário</h1>
+        <h2>Preencha os campos abaixo</h2>
+    </div>
+    <div class="formulario">
+    <form action="" method="POST">
+    <!-- POST / GET -->
+    <!--POST: é um verbo do protocolo HTTP usado para enviar dados ao servidor--> 
+    <!--GET:é um método de requisição do protocolo HTTP utilizado pelo navegador para solicitar e recuperar dados de um servidor-->
+<div class="campo">
+    <label for="imagem">Escolha uma Imagem de Perfil</label>
+    <input type="file" name="imagem" placeholder="Sua Imagem" accept="image/png, image/jpeg" id="imagem" required>
+</div>
+<div class="campo">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" placeholder="Seu nome" size="50" required>
+</div>
+<div class="campo">
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" placeholder="Digite A Cidade de Residência" size="50">
+</div>
+<div class="campo">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Digite o E-mail do Usuario" size="50" required>
+</div>
+<div class="campo">
+    <label for="senha">Senha de Acesso:</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite a Senha de Acesso" size="50" required>
+</div>
+<div class="campo">
+<label for="data">Data de Nascimento</label>
+<input type="date" id="data" name="data" placeholder="Digite a data de Nascimento do Usuario" size="50">
+</div>
+<div class="campo">
+    <label for="telefone">Telefone de Contato:</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(##) #####-####" size="50" required>
+</div>
+<div class="campo">
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado">
+    <option>Rio de Janeiro</option>
+    <option>São Paulo</option>
+    <option>Minas Gerais</option>
+    <option>Outros</option>
+    </select>
+</div>
+<div class="campo">
+    <label class="titulo-campo">Turno de Preferencia</label>
+    <label class="opcao">
+        <input type="radio" name="turno" value="manha">Manhã
+    </label>
+        <label class="opcao">
+        <input type="radio" name="turno" value="tarde">Tarde
+    </label>
+        <label class="opcao">
+        <input type="radio" name="turno" value="noite">Noite
+    </label>
+        <label class="opcao">
+        <input type="radio" name="turno" value="bobbie goods">Bobbie Goods
+    </label>
+</div>
+
+
+<div class="campo">
+    <label class="titulo-campo">Areas de interesse</label>
+    <label class="opcao">
+        <input type="checkbox" name="interesses" value="tec">Tecnologia
+    </label>
+        <label class="opcao">
+        <input type="checkbox" name="interesses" value="artesanato">Artesanato
+    </label>
+        <label class="opcao">
+        <input type="checkbox" name="interesses" value="marketing">Marketing
+    </label>
+        <label class="opcao">
+        <input type="checkbox" name="interesses" value="bobbie goods">Bobbie Goods
+    </label>
+</div>
+<div class="campo">
+    <label for="obs">Observações:</label>
+    <textarea id="obs" name="obs" rows="4" placeholder="Escreva aqui seu comentario..">
+    </textarea>
+</div>
+<div class="botao">
+    <button class="button" type="submit">Bobbie Goods</button>
+</div>
+    </form>
+    </div>
+
+</body>
+</html>
