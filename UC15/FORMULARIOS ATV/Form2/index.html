@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario 2 - Reparo de Tapeçarias e Couro</title>
+</head>
+<body>  
+<div>
+    <div class="cabecalho">
+        <h1>REPARO DE TAPEÇARIAS E COUROS</h1>
+    </div>
+    
+    <div class="formulario">
+        <form action="" method="POST">
+            
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" placeholder="ex:email@email.com" required>
+            </div>
+            
+            <div class="campo">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" >
+            </div>
+            
+            <div class="campo">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+            </div>
+            
+            <div class="campo">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            
+            <div class="campo">
+                <label for="telefone">Telefone fixo ou Celular:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(##) ##### - #### " required>
+            </div>
+
+            <!-- SERVIÇOS EM COURO (EM FILA NA VERTICAL) -->
+            <div class="campo-grupo">
+                <label class="titulo-campo">Serviços em couro</label>
+                <div class="opcoes-container">
+                    <label class="opcao"><input type="checkbox" name="servicos" value="bancos-couro-legitimo"> Bancos em couro - 100% Legítimo</label>
+                    <label class="opcao"><input type="checkbox" name="servicos" value="bancos-couro-misto"> Bancos em couro - Misto</label>
+                    <label class="opcao"><input type="checkbox" name="servicos" value="bancos-couro-sintetico"> Bancos em couro - 100% Sintético</label>
+                    <label class="opcao"><input type="checkbox" name="servicos" value="volante-couro"> Volante em couro</label>
+                    <label class="opcao"><input type="checkbox" name="servicos" value="revestimento-manopla-colfa"> Revestimento de manopla e colfa</label>
+                    <label class="opcao"><input type="checkbox" name="servicos" value="revestimento-apoio-braco"> Revestimento de apoio de braço</label>
+                </div>
+            </div>
+
+            <!-- RESTAURAÇÃO E TAPEÇARIA -->
+            <div class="campo-grupo">
+                <label class="titulo-campo">Restauração e Tapeçaria</label>
+                <div class="opcoes-container">
+                    <label class="opcao"><input type="checkbox" name="res-tap" value="completa-carro-antigo"> Restauração completa de carros antigos</label>
+                    <label class="opcao"><input type="checkbox" name="res-tap" value="somente-teto"> Somente troca do teto</label>
+                    <label class="opcao"><input type="checkbox" name="res-tap" value="somente-assoalho"> Somente troca do assoalho</label>
+                    <label class="opcao"><input type="checkbox" name="res-tap" value="reparo-estrutura-bancos-ferragens"> Reparos em estrutura dos bancos e ferragens</label>
+                    <label class="opcao"><input type="checkbox" name="res-tap" value="hidratacao-higiene-bancos"> Hidratação e higienização dos bancos</label>
+                </div>
+            </div>
+
+            <!-- ACESSÓRIOS -->
+            <div class="campo-grupo">
+                <label class="titulo-campo">Acessórios:</label>
+                <div class="opcoes-container">
+                    <label class="opcao"><input type="checkbox" name="acessorios" value="kit-hidratacao-couro"> Kit hidratação p/ Couro</label>
+                    <label class="opcao"><input type="checkbox" name="acessorios" value="tapetes-personalizados"> Tapetes Personalizados</label>
+                    <label class="opcao"><input type="checkbox" name="acessorios" value="adaptacao-apoio-braco"> Adaptação de apoio de braço</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="fabricante">Marca fabricante:</label>
+                <select id="fabricante" name="fabricante">
+                    <option>Tapeçaria Alemão</option>
+                    <option>Borkar</option>
+                    <option>Durli Leathers</option>
+                    <option>JBS Couros</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="nome-modelo">Nome modelo:</label>
+                <input type="text" id="nome-modelo" name="nome-modelo" placeholder="Se nulo, digite 'Nenhum'" required>
+            </div>
+
+            <div class="campo">
+                <label for="ano-fabricacao">Ano de fabricação:</label>
+                <input type="date" id="ano-fabricacao" name="ano-fabricacao">
+            </div>
+
+            <!-- FORMA DE PAGAMENTO -->
+            <div class="campo-grupo">
+                <label class="titulo-campo">Especifique a forma de pagamento</label>
+                <div class="opcoes-container">
+                    <label class="opcao"><input type="radio" name="pagamento" value="a-vista"> À vista</label>
+                    <label class="opcao"><input type="radio" name="pagamento" value="deposito-conta-corrente"> Depósito em conta corrente</label>
+                    <label class="opcao"><input type="radio" name="pagamento" value="doc-transf-bancaria"> Doc ou transferência bancária</label>
+                    <label class="opcao"><input type="radio" name="pagamento" value="credito-parcelado"> Parcelado até 4x no cartão de crédito</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="obs">Diga-nos com a maior riqueza de detalhes o serviço de interesse:</label>
+                <textarea id="obs" name="obs" rows="4"></textarea>
+            </div>
+            <div class="botao">
+    <button class="button" type="submit">Enviar formulario</button>
+</div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

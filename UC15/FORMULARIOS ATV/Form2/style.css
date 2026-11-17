@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
+
+h1 {
+    padding-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 35px;
+    color: black;
+}
+
+.formulario {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 40px 60px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 214, 101);
+}
+
+
+.campo,
+.campo-grupo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+.campo > label,
+.campo-grupo > label.titulo-campo {
+    width: 230px;       /* largura da coluna da esquerda */
+    flex-shrink: 0;   /*nao deixa tudo  amassar pra um lado so*/
+    text-align: left;
+    font-weight: bold;  
+}
+
+/* joga todas as caixas de texto, selects e textareas alinhadas na coluna da direita */
+.campo input,
+.campo select,
+.campo textarea {
+    flex: 1;
+    max-width: 380px;
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* empilha os checkboxes e rádios perfeitamente na coluna da direita */
+.opcoes-container {
+    display: flex;
+    flex-direction: column; /* um embaixo do outro */
+    gap: 8px;               /* espaço entre as opções */
+    flex: 1;
+    max-width: 380px;
+    text-align: left;
+}
+
+/* Alinha o checkbox com o texto dele */
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: normal; /* Mantém o texto da opção sem negrito */
+    font-size: 12px;
+}
+.botao{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;/*tranforma cursor em maozinha em cima do botao*/
+    font-size: 15px;
+  
+}

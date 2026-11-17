@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario 1 - Reserve sua Mesa</title>
+</head>
+<body>
+ 
+    <div class="formulario">
+    <form action="" method="POST">
+    <!-- POST / GET -->
+    <!--POST: é um verbo do protocolo HTTP usado para enviar dados ao servidor--> 
+    <!--GET:é um método de requisição do protocolo HTTP utilizado pelo navegador para solicitar e recuperar dados de um servidor-->
+   <div class="cabecalho">
+        <h1>Reserve sua Mesa</h1>
+        <span><b>Por favor, preencha o formulario abaixo com atenção para que possamos atende-lo da melhor forma possivel.Seja bem-vindo!</b></span>
+    </div>
+    <hr>
+
+    <div class="campo campo-duplo">
+    <label for="nome">Nome Completo</label>
+    
+    <div class="grupo-inputs">
+        <div class="subcampo">
+            <input type="text" id="nome" name="nome" required>
+            <small>Nome</small>
+        </div>
+
+        <div class="subcampo">
+            <input type="text" id="sobrenome" name="sobrenome" required>
+            <small>Sobrenome</small>
+        </div>
+    </div>
+</div>
+<div class="campo">
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="ex:myname@example.com" size="50" required>
+</div>
+<div class="campo">
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(##) #####-####" size="50" required>
+</div>
+<div class="campo">
+    <label for="numero-pessoas">Numero de Pessoas</label>
+    <input type="number" id="numero-pessoas" name="numero-pessoas" size="50" required>
+</div>
+
+<hr>
+<p><h3>Reserva</h3></p>
+<hr>
+
+<div class="campo">
+    <label for="tipo-reserva">Tipo de Reserva</label>
+    <select id="tipo-reserva" name="tipo-reserva">
+    <option>Mesa Simples</option>
+    <option>Reserva para Grupo(s)</option>
+    <option>Mesa Casal</option>
+    <option>Mesa Privativa(Corporal)</option>
+    <option>Outro</option>
+    </select>
+</div>
+<div class="campo">
+    <label for="se-outro">Se "Outro" acima, especifique</label>
+    <input type="text" id="se-outro" name="se-outro">
+</div>
+<div class="campo">
+    <label for="especiais">Pedidos Especiais</label>
+    <input type="text" id="especiais" name="especiais">
+</div>
+<hr>
+<div class="botao">
+    <button class="button" type="submit">Enviar</button>
+</div>
+    </form>
+    </div>
+
+</body>
+</html>

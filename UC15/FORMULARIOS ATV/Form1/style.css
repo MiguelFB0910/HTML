@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+min-height: 100vh;/* Altura minima   -  vh = tamanho responsividade*/
+box-sizing: border-box;/* caixa para o formulario */
+display: flex;
+flex-direction: column;
+align-items: center;
+color: rgb(99, 99, 99);
+}
+
+
+h1{
+padding-top: 10px;
+margin-bottom: 5px;
+text-align: left;
+font-size: 35px;
+color: black;
+}
+
+
+
+span{
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+hr{
+ margin-top: 35px;
+ margin-bottom: 35px;
+}
+
+
+.campo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinha o texto e o input no topo */
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+
+.campo > label {
+    width: 180px; 
+    text-align: left;
+    font-weight: normal;
+    padding-top: 8px; 
+}
+
+
+.campo input, 
+.campo select, 
+.campo .grupo-inputs {
+    flex: 1;
+    max-width: 400px; 
+}
+
+
+/*coloca os input do lado um do outro*/
+.grupo-inputs {
+    display: flex;
+    gap: 10px; 
+}
+
+
+
+.subcampo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.subcampo small {
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: left;
+}
+
+
+.formulario{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 50px 100px;
+    border-radius: 15px;
+    flex-direction: row;
+    max-width: 600px;
+    
+}
+
+
+
+
+.botao{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+
+
+button{
+    border: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    background-color: rgb(59, 190, 41);
+    color: white;
+    cursor: pointer;/*tranforma cursor em maozinha em cima do botao*/
+    font-size: 15px;
+}
+
+
+
+input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: gray;    
+}
+
+
+
+
+select{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: rgb(78, 78, 78);
+}
+
+
+
+
+::placeholder{
+    color: darkgray;
+}
