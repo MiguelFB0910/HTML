@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+ 
+    <div class="formulario">
+        <form action="" method="POST">
+            <div class="cabecalho">
+                <h1>Formulário de Cadastro</h1>
+            </div>
+
+            <!-- Nome e Sobrenome -->
+            <div class="campo campo-duplo">
+                <label for="nome">Nome e Sobrenome</label>
+                
+                <div class="grupo-inputs">
+                    <div class="subcampo">
+                        <input type="text" id="nome" name="nome" required>
+                        <small>Nome</small>
+                    </div>
+
+                    <div class="subcampo">
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                        <small>Sobrenome</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empresa -->
+            <div class="campo">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" required>
+            </div>
+
+            <!-- Email -->
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ex:myname@example.com" required>
+            </div>
+
+            <!-- Telefone com DDD (reaproveitando suas classes de campo duplo) -->
+            <div class="campo campo-duplo">
+                <label for="ddd">Telefone com DDD</label>
+                
+                <div class="grupo-inputs">
+                    <div class="subcampo" style="max-width: 80px;">
+                        <input type="tel" id="ddd" name="ddd" maxlength="3" required>
+                        <small>DDD</small>
+                    </div>
+
+                    <div class="subcampo">
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <small>Telefone</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sexo -->
+            <div class="campo">
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="" disabled selected>--Selecione a Opção</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                    <option value="nao-informar">Prefiro não informar</option>
+                </select>
+            </div>
+
+            <!-- Você é iniciante? -->
+         <div class="campo campo-iniciante">
+    <label>Você é iniciante?</label>
+    <div class="opcoes-radio">
+        <label class="opcao-item">
+            <input type="radio" name="iniciante" value="sim" required> Sim
+        </label>
+        <label class="opcao-item">
+            <input type="radio" name="iniciante" value="nao"> Não
+        </label>
+    </div>
+            </div>
+            <div class="botao">
+    <button class="button" type="submit">Enviar</button>
+</div>
+
+</div>
+
+        </form>
+    </div>
+</body>
+</html>

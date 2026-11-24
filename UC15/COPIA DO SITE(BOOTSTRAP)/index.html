@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Jungle Resort</title>
+</head>
+<body>
+
+<header class="banner-topo pt-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <span class="avatar" style="--bs-avatar-size: 8rem;">
+            <img class="avatar-img" src="/img/Logo.png" alt="Logo Destino Brotas">
+        </span>
+
+        <div class="botoes_menu">
+            <ul class="nav gap-2">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#passeios">Passeios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#valores">Preços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center text-white hero-conteudo">
+        <h1 class="fs-3 fw-bold mb-3">Wild Planet<br>Jungle Resort</h1>
+        <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-light px-8">VÍDEO</a>
+            <a href="#" class="btn btn-outline-light px-5">LEIA MAIS</a>
+        </div>
+    </div>
+</header>
+
+<section id="passeios" class="secao-passeios py-5">
+    <div class="container">
+        <h2 class="fs-6 fw-bold mb-4">Passeios</h2>
+        <div class="row g-4 text-center">
+            
+            <!-- CARROSSEL 1: CANOAGEM -->
+            <div class="col-md-4">
+                <div id="carouselCanoagem" class="carousel carousel-overlay slide">
+                    <div class="carousel-inner rounded-top-4">
+                        <div class="carousel-item active">
+                            <img src="/img/Canoagem.avif" class="d-block w-100 img-carrossel" alt="Canoagem 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Canoagem2.webp" class="d-block w-100 img-carrossel" alt="Canoagem 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Canoagem3.avif" class="d-block w-100 img-carrossel" alt="Canoagem 3">
+                        </div>
+                    </div>
+                    <div class="carousel-overlay-controls">
+                        <div>
+                            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselCanoagem" data-bs-slide="prev">
+                                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselCanoagem" data-bs-slide="next">
+                                <span class="carousel-icon-next" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselCanoagem" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselCanoagem" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselCanoagem" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="legenda-passeio rounded-bottom-4">Canoagem</div>
+            </div>
+
+            <!-- CARROSSEL 2: PASSEIO RADICAL -->
+            <div class="col-md-4">
+                <div id="carouselRadical" class="carousel carousel-overlay slide">
+                    <div class="carousel-inner rounded-top-4">
+                        <div class="carousel-item active">
+                            <img src="/img/Passeio.jpg" class="d-block w-100 img-carrossel" alt="Passeio Radical 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Passeio2.jpg" class="d-block w-100 img-carrossel" alt="Passeio Radical 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Passeio3.jpg" class="d-block w-100 img-carrossel" alt="Passeio Radical 3">
+                        </div>
+                    </div>
+                    <div class="carousel-overlay-controls">
+                        <div>
+                            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselRadical" data-bs-slide="prev">
+                                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselRadical" data-bs-slide="next">
+                                <span class="carousel-icon-next" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselRadical" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselRadical" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselRadical" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="legenda-passeio rounded-bottom-4">Passeio Radical</div>
+            </div>
+
+            <!-- CARROSSEL 3: TRILHAS -->
+            <div class="col-md-4">
+                <div id="carouselTrilhas" class="carousel carousel-overlay slide">
+                    <div class="carousel-inner rounded-top-4">
+                        <div class="carousel-item active">
+                            <img src="/img/Trilha.jpg" class="d-block w-100 img-carrossel" alt="Trilha 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Trilha2.jpg" class="d-block w-100 img-carrossel" alt="Trilha 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/Trilha3.webp" class="d-block w-100 img-carrossel" alt="Trilha 3">
+                        </div>
+                    </div>
+                    <div class="carousel-overlay-controls">
+                        <div>
+                            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselTrilhas" data-bs-slide="prev">
+                                <span class="carousel-icon-prev" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="btn-icon btn-sm btn-subtle theme-secondary" type="button" data-bs-target="#carouselTrilhas" data-bs-slide="next">
+                                <span class="carousel-icon-next" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselTrilhas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselTrilhas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselTrilhas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="legenda-passeio rounded-bottom-4">Trilhas</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="valores" class="secao-valores py-5">
+    <div class="container">
+        <h2 class="fs-6 fw-bold mb-4">Valores</h2>
+        <table class="table table-bordered table-secondary w-50 mx-auto text-center">
+            <thead>
+                <tr>
+                    <th>Passeios</th>
+                    <th>Valores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Canoagem</td>
+                    <td>R$ 200,00</td>
+                </tr>
+                <tr>
+                    <td>Passeio Radical</td>
+                    <td>R$ 120,00</td>
+                </tr>
+                <tr>
+                    <td>Trilhas</td>
+                    <td>R$ 160,00</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="fw-bold">Consulte na recepção os valores atualizados</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<div class="form-range theme-primary">
+  <input type="range" class="form-range-input" aria-label="Example primary range">
+</div>
+<div class="form-range theme-accent">
+  <input type="range" class="form-range-input" aria-label="Example accent range">
+</div>
+<div class="form-range theme-success">
+  <input type="range" class="form-range-input" aria-label="Example success range">
+</div>
+<div class="form-range theme-danger">
+  <input type="range" class="form-range-input" aria-label="Example danger range">
+</div>
+<div class="form-range theme-warning">
+  <input type="range" class="form-range-input" aria-label="Example warning range">
+</div>
+<div class="form-range theme-info">
+  <input type="range" class="form-range-input" aria-label="Example info range">
+</div>
+<div class="form-range theme-inverse">
+  <input type="range" class="form-range-input" aria-label="Example inverse range">
+</div>
+<div class="form-range theme-secondary">
+  <input type="range" class="form-range-input" aria-label="Example secondary range">
+</div>
+
+<footer id="contato" class="rodape-contato py-3 d-flex justify-content-center align-items-center gap-2">
+    <span>Contato: (19) 992499137</span>
+</footer>
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>
