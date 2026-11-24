@@ -45,7 +45,7 @@
 
 #pagina-home {
     height: 600px;
-    background: linear-gradient(rgba(169, 202, 240, 0.39), rgba(99, 176, 238, 0.185)), url(../img/banner.jpg);
+    background: linear-gradient(rgba(169, 202, 240, 0.39), rgba(99, 176, 238, 0.185)), url(./img/banner.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -86,6 +86,7 @@
 .Livre {
     font-family: 'Changa One';
     background-color: #008837; 
+    color: white;
     font-size: 15px !important; 
     width: 20px !important;
     height: auto !important;
@@ -94,27 +95,56 @@
 
 .idade-10 {
     font-family: 'Changa One';
-    background-color: #0056b3; 
+    background-color: #0056b3;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px; 
 }
 .idade-12 {
     font-family: 'Changa One';
-    background-color: #ffcc00; 
-    color: #000000 !important;
+    background-color: #ffcc00;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px;
 }
 
 .idade-14 {
     font-family: 'Changa One';
-    background-color: #ee7d00; 
+    background-color: #ee7d00;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px; 
 }
 
 .idade-16 {
     font-family: 'Changa One';
-    background-color: #d60000; 
+    background-color: #d60000;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px; 
 }
 
 .idade-18 {
     font-family: 'Changa One';
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px; 
 }
 .filmes-all {
     font-family: 'Changa One' ;

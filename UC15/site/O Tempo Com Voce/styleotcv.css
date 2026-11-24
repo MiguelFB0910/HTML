@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 200px;
+    height: 180px;
+}
+
+.categoria {
+    
+    padding-top: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-principal ul {
+    list-style: none;
+}
+
+.menu-principal ul li {
+    font-family: 'Changa One';
+    display: inline-block;
+}
+
+.menu-principal ul li a {
+    font-family: 'Changa One';
+    background-color: rgba(127, 225, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.menu-principal ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(127, 225, 255);
+    transition: transform 0.5s ease;
+}
+
+#pagina-home {
+    height: 600px;
+    background: linear-gradient(rgba(127, 225, 255, 0.39), rgba(255, 255, 255, 0.616)), url(./img/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.filmes-container {
+    display: flex;
+    justify-content: left; 
+    align-items: flex-start;
+    gap: 10px; 
+    flex-wrap: wrap; 
+    padding: 0 40px; 
+}
+
+.filme-card {
+    text-align: center;
+}
+
+.filme-card img {
+    width: 300px;          
+    height: 450px;       
+    object-fit: cover;  
+    border-radius: 15px;
+}
+/* estilo base para todas as classificações indicativas */
+.filme-info span[class^="Livre"],
+.filme-info span[class^="idade-"] {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.Livre {
+    font-family: 'Changa One';
+    background-color: #008837;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+.idade-10 {
+    font-family: 'Changa One';
+    background-color: #0056b3;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+.idade-12 {
+    font-family: 'Changa One';
+    background-color: #ffcc00;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+.idade-14 {
+    font-family: 'Changa One';
+    background-color: #ee7d00;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+.idade-16 {
+    font-family: 'Changa One';
+    background-color: #d60000;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px;
+}
+
+.idade-18 {
+    font-family: 'Changa One';
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 15px !important; 
+    width: 20px !important;
+    height: auto !important;
+    padding: 0 6px;
+    border-radius: 5px; 
+}
+.filmes-all {
+    font-family: 'Changa One' ;
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color:  rgb(250, 250, 250);
+    background-color: rgb(100, 217, 253);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+}
+#corpo{
+    background: linear-gradient(rgb(127, 225, 255), rgb(250, 250, 250));
+}
+.espaco{
+    background-color: rgb(250, 250, 250);
+    display: block;
+}
+/* Faz a imagem e o texto ficarem lado a lado */
+.card-interno {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+.info-lateral {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+}
+.filme-tituloyn {
+    font-family: 'Changa One';
+    font-size: 65px;
+    margin-top: 10px;
+    color:  rgb(255, 255, 255);
+}
+.video-bloqueado-container {
+    position: relative;
+    width: 560px; 
+    height: 315px; 
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.camada-bloqueio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: transparent;
+}
+.video-bloqueado-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+.filme-sinopseyn {
+    font-family: 'Changa One';
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+.sinopse{
+    font-family: 'Changa One';
+    font-size: 18px;
+    color: rgb(76, 213, 255);
+    margin-top: 10px;
+}
+.duracao, .ano {
+    font-family: 'Changa One';
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.lista-categoriasyn {
+    font-family: 'Changa One';
+    text-align: left;
+    margin: 10px;
+    text-transform: uppercase;
+    color: rgb(131, 193, 230);
+    word-spacing: 20px;
+}
+.personagens{
+    font-family: 'Changa One';
+    text-align: center;
+    margin: 30px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 217, 253);
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+    width: 100%;
+}
+
+.pers-container {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 40px 40px 40px;
+    width: 100%;
+}
+
+.pers-card {
+    text-align: center;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pers-card img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.nome-pers {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Changa One';
+    margin-top: 12px;
+    -webkit-text-stroke: 0.1px #000000;
+}
+
+.pers-info {
+    color: rgb(131, 193, 230);
+    font-size: 20px;
+    font-family: 'Changa One';
+    margin-top: 8px;
+    
+}
+
+.sobre {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.4;
+}
